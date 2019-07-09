@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        section.main{
+            display: flex;
+            flex-flow: wrap; /*화면이 작아지면 줄바꿈하여 표시*/
+        }
+
+        section.main article{
+            background-color: #eee;
+            flex: 600px; /* flex : 1 1 600px;*/
+        }
+
+        section.main nav {
+            background-color: #ddd;
+            min-height: 50px;
+            flex: 150px;
+            order: -1;
+            line-height: 2em;
+            padding: 0;
+        }
+
+        section.main aside{
+            background-color: #ccf;
+            min-height: 50px;
+            flex: 150px;
+        }
+
+        ul{
+            list-style: none;
+        
+        }
+        ul li{
+            border-bottom: tomato 1px solid;
+
+        }
+
+        ul a{
+            display: block;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        ul a:hover{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>제목</h1>
+    </header>
+    <section class="main">
+        <article>
+            <p>우리나라만세</p>
+            지방의회의 조직·권한·의원선거와 지방자치단체의 장의 선임방법 기타 지방자치단체의 조직과 운영에 관한 사항은 법률로 정한다. 국가는 평생교육을 진흥하여야 한다. 이 헌법시행 당시의 법령과 조약은
+            이 헌법에 위배되지 아니하는 한 그 효력을 지속한다. 이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에 의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다. 국교는
+            인정되지 아니하며, 종교와 정치는 분리된다. 모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를 가지며, 국가와 국민은 환경보전을 위하여 노력하여야 한다. 의원을 제명하려면 국회재적의원 3분의
+            2 이상의 찬성이 있어야 한다.
+        </article>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+       
+        </nav>
+        <aside>
+                Advertisement
+            </aside>
+        
+    </section>
+    <footer>
+            Footer
+     </footer>
+</body>
+</html>
